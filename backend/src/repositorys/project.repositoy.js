@@ -29,3 +29,23 @@ export const getbyId = async (id) => {
   });
   return project;
 };
+
+export const updateProject = async (id, data) => {
+  const project = await prisma.project.update({
+    where: {
+      id,
+    },
+    data,
+  });
+
+  return project;
+};
+
+export const deleteProject = async (id) => {
+  await prisma.project.delete({
+    where: {
+      id,
+    },
+  });
+  return;
+};
