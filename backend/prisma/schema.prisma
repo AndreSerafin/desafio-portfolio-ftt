@@ -15,6 +15,7 @@ model Project {
   project_name String @unique
   project_category String
   project_description String?
+  about_project String?
   tecnologies String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

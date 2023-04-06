@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  color: inherit !important;
+  font-size: inherit !important;
+  border-radius: inherit !important;
+}
+
+h3,
+p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.table {
+  border-radius: 0 !important;
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+.ant-btn {
+  font-family: "Poppins";
+  color: #fcfcfc !important;
+  font-weight: 500 !important;
+  margin-left: 4px;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+.ant-btn-primary {
+  background-color: #122c4a !important;
+}
+
+.ant-btn-default {
+  background-color: #122c4a !important;
+}
+.ant-btn-dangerous {
+  background-color: #f03a46 !important;
+}
+
+.ant-pagination-item-link {
+  border-radius: 5px !important;
+}
+
+.ant-table-pagination-right {
+  margin-right: 30px !important;
+}
