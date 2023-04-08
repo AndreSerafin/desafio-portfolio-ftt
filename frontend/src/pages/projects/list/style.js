@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ListContainer = styled.div`
   display: flex;
+  overflow: hidden;
   justify-content: right;
   margin: 10px 30px;
   padding-left: 3px;

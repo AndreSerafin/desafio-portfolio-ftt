@@ -38,8 +38,15 @@ export const TitleContainer = styled.div`
   border-bottom-right-radius: 0 !important;
 `;
 
+export const ArrowLink = styled.a`
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 6px;
+`;
+
 export const Children = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-self: center;
   flex-direction: column;
   background-color: #d9d9d9 !important;
@@ -47,9 +54,11 @@ export const Children = styled.div`
   width: 90%;
   margin: 20px 40px;
   border-radius: 5px !important;
+  overflow: hidden;
 `;
 
 export const MainTitle = styled.h2`
+  width: max-content;
   color: #132d4c !important;
   margin: 10px 30px 0;
   padding-left: 10px;
@@ -60,6 +69,7 @@ export const MainTitle = styled.h2`
 `;
 
 export const SubTitle = styled.h3`
+  display: block;
   font-weight: bolder;
   color: gray !important;
   margin: 0 44px 0 !important;

@@ -1,13 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 import List from "../pages/projects/list";
 import Create from "../pages/projects/create";
-import { Menu } from "../components";
+import HomePage from "../pages/home/homePage";
+import { Menu, HomeMenu } from "../components";
+import CreateRoute from "./createRoutes";
 
 const RoutesComponent = () => {
   return (
     <Routes>
       <Route
-        path="/"
+        path="/list"
         element={
           <Menu
             title={"Projetos"}
@@ -16,15 +18,28 @@ const RoutesComponent = () => {
             <List />
           </Menu>
         }
-      ></Route>
+      />
       <Route
         path="/create"
         element={
-          <Menu>
+          <Menu
+            onBack={"/list"}
+            title={"Adicionar projetos"}
+            subTitle={"Aqui você poderá adicionar seus projetos"}
+          >
             <Create />
           </Menu>
         }
+      />
+      <Route
+        path="/"
+        element={
+          <HomeMenu>
+            <HomePage></HomePage>
+          </HomeMenu>
+        }
       ></Route>
+      {CreateRoute()}
     </Routes>
   );
 };

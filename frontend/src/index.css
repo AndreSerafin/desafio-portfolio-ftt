@@ -14,6 +14,7 @@ code {
 }
 
 * {
+  font-family: "Poppins";
   color: inherit !important;
   font-size: inherit !important;
   border-radius: inherit !important;
@@ -57,4 +58,16 @@ p {
 
 .ant-table-pagination-right {
   margin-right: 30px !important;
+}
+
+.anticon-arrow-left {
+  color: #122c4a !important;
+}
+
+textarea.ant-input {
+  max-height: 250px;
+}
+
+#__react-alert__ {
+  color: white !important;
 }

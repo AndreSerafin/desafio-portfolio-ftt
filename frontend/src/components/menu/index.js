@@ -8,23 +8,36 @@ import {
   SubTitle,
   MainContainer,
   TitleContainer,
+  ArrowLink,
 } from "./styles";
-import Logo from "../../assets/imgs/logo-ftt.png";
+import { fttLogo, arrowLeft } from "../../assets";
 
-const MenuComponent = ({ children, title, subTitle }) => {
+function testOnBack(onBack) {
+  if (onBack != null) {
+    return (
+      <ArrowLink href={onBack}>
+        <img alt="Back" width={17} src={arrowLeft} />
+      </ArrowLink>
+    );
+  }
+  return null;
+}
+
+const MenuComponent = ({ children, title, subTitle, onBack }) => {
   return (
     <MainContainer>
       <Body>
         <a href="/">
-          <ImgLogo src={Logo} width={180}></ImgLogo>
+          <ImgLogo src={fttLogo} width={180}></ImgLogo>
         </a>
         <SessionLinks>
-          <Link>Inicio</Link>
-          <Link>Projetos</Link>
+          <Link href="/">Inicio</Link>
+          <Link href="/list">Projetos</Link>
         </SessionLinks>
       </Body>
       <Children>
         <TitleContainer>
+          {testOnBack(onBack)}
           <MainTitle>{title}</MainTitle>
           <SubTitle>{subTitle}</SubTitle>
         </TitleContainer>

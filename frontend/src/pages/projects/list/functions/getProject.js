@@ -1,6 +1,6 @@
 import api from "../../../../services/api";
 
-export const getUsers = async (setLoading, setData, setError) => {
+export const getProjects = async (setLoading, setData, setError) => {
   try {
     const response = await api.get("/project");
     setData(response.data);
