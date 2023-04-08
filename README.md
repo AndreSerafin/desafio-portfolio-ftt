@@ -26,5 +26,5 @@ POST Exemplo:
   "tecnologies": "HTML, CSS, JavaScript, Vue.js, Firebase"
 }
 
-1- localhost:3000/        - Portfólio / pagina principal        
-2- localhost:3000/list    - Gerenciamento de projetos
+2- localhost:3000/        - Portfólio / pagina principal        
+3- localhost:3000/list    - Gerenciamento de projetos
