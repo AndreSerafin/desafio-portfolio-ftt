@@ -12,6 +12,9 @@ O projeto deverá ter as seguintes características:
 
 O projeto desenvolvido consiste em uma aplicação full-stack desenvolvida usando React, Node, Express entre outras bibliotecas
 
+Para iniciar deve-se ter o node instalado na maquina assim como o yarn, e deve-se iniciar o front end e o back end acessando suas respectivas pastas
+em seguida digitando o comando: yarn start em ambas
+
 Rotas utilizadas pela aplicação
 1- localhost:3001/projects - Rota utilizada para GET e POST
 
