@@ -16,6 +16,10 @@ Para iniciar deve-se ter o docker compose e node instalado na maquina assim como
 
   docker-compose up -d
 
+instalar as dependencias do back end e front end com o comando em suas respectivas pastas:
+
+  yarn install
+
 logo em seguida iniciar o backend e front com o comando:
 
   yarn start
