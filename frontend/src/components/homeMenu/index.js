@@ -4,7 +4,6 @@ import {
   Footer,
   ImgLogo,
   NavLinksSession,
-  NavPage,
   NavSession,
   SocialMediaSession,
 } from "./styles.js";

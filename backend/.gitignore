@@ -1,6 +1,15 @@
-node_modules
-banco-de-dados-portfolio-api
-build
-npm-debug.log
-.nyc
-.DS_Store
+# Node.js dependencies
+node_modules/
+*.log
+
+# Prisma
+/prisma/.env
+/prisma/.prisma/client/
+/prisma/migrations/
+/prisma/schema.prisma
+
+# Sucrase
+/dist/
+
+banco-de-dados-portfolio-api/
+

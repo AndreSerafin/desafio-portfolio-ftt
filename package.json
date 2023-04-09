@@ -1,0 +1,16 @@
+{
+  "name": "desafio-portfolio-ftt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:AndreSerafin/desafio-portfolio-ftt",
+  "author": "Andre Pereira <andreserafim11@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"cd backend && nodemon --exec sucrase-node src/index.js\" \"cd frontend && yarn start\""
+  },
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "sucrase": "^3.31.0"
+  }
+}
