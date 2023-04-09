@@ -10,6 +10,7 @@
     "start": "concurrently \"cd backend && nodemon --exec sucrase-node src/index.js\" \"cd frontend && yarn start\""
   },
   "dependencies": {
+    "concurrently": "^8.0.1",
     "nodemon": "^2.0.22",
     "sucrase": "^3.31.0"
   }
