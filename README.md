@@ -1,42 +1,61 @@
-Projeto fullstack criado com base no desafio do Processo de seleção da FTT-2023 segue os principais pontos que o
-projeto deveria cumprir, as informações dos projetos se tratam de informações ficticias.
+# Processo de seleção FTT 2023 - Desafio Full Stack
 
-O projeto deverá ter as seguintes características:
+Este projeto foi criado como parte do processo de seleção da FTT-2023, e segue os principais pontos que o projeto deveria cumprir. As informações contidas no projeto são fictícias.
 
-1 - Design moderno e intuitivo;
-2 - Desenvolvimento em linguagens e tecnologias atuais seguindo o fluxo utilizado pela FTT atualmente;
-3 - Funcionalidades que possibilitem a apresentação dos serviços e projetos da FTT;
-4 - Integração com redes sociais e outras plataformas de divulgação;
-5 - Acesso a partir de dispositivos móveis, como smartphones e tablets;
-6 - Testes de usabilidade e qualidade, para garantir a satisfação do usuário final.
+O desafio consiste em desenvolver uma aplicação full-stack com as seguintes características:
 
-O projeto desenvolvido consiste em uma aplicação full-stack desenvolvida usando React, Node, Express entre outras bibliotecas
+- Design moderno e intuitivo;
+- Desenvolvimento em linguagens e tecnologias atuais seguindo o fluxo utilizado pela FTT atualmente;
+- Funcionalidades que possibilitem a apresentação dos serviços e projetos da FTT;
+- Integração com redes sociais e outras plataformas de divulgação;
+- Acesso a partir de dispositivos móveis, como smartphones e tablets;
+- Testes de usabilidade e qualidade, para garantir a satisfação do usuário final.
+- Tecnologias utilizadas
+- O projeto desenvolvido consiste em uma aplicação full-stack desenvolvida usando as seguintes tecnologias:
 
-Para iniciar deve-se ter o docker compose e node instalado na maquina assim como o yarn, e deve-se iniciar o banco de dados com o comando: 
+1. React (frontend), axios, yup, entre outras
+2. Node.js e Express (backend), yup entre outras
+3. Docker
 
-  docker-compose up -d
+### Como executar o projeto:
 
-instalar as dependencias do back end e front end com o comando em suas respectivas pastas:
+1. Antes de iniciar, certifique-se de ter o Docker Compose e o Node.js instalados na sua máquina.
 
-  yarn install
+2. Clone este repositório na sua máquina;
+3. No terminal, navegue até o diretório do backend e execute o seguinte comando para iniciar o banco de dados:
 
-logo em seguida iniciar o backend e front com o comando:
+```
+docker-compose up -d
+```
 
-  yarn start
+4. Em seguida, execute o seguinte comando nas pastas do backend, frontend e pasta principal para instalar as dependências:
 
-Rotas utilizadas pela aplicação
-1- localhost:3001/projects - Rota utilizada para GET e POST
+```
+yarn install
+```
 
-POST Exemplo: 
+5. Por fim, execute o seguinte comando no diretório principal para iniciar o projeto:
+
+```
+yarn start
+```
+
+## Rotas utilizadas pela aplicação
+
+- localhost:3001/projects - Rota utilizada para GET e POST
+
+### Exemplo de POST:
+
+```
 {
   "project_name": "Gerenciador de Tarefas",
   "project_category": "Software",
   "project_description": "Um aplicativo para gerenciar tarefas pessoais e profissionais",
-  "about_project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget dolor ut metus faucibus dignissim in sed quam. 
-   Curabitur vel arcu vitae dolor commodo dignissim. Duis ultricies elit at elit tristique hendrerit. Maecenas vel consectetur velit. 
-   Donec non nunc vel augue semper volutpat eget non arcu. Donec bibendum turpis enim, vel varius justo tincidunt id.",
+  "about_project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget dolor ut metus faucibus dignissim in sed quam. Curabitur vel arcu vitae dolor commodo dignissim. Duis ultricies elit at elit tristique hendrerit. Maecenas vel consectetur velit. Donec non nunc vel augue semper volutpat eget non arcu. Donec bibendum turpis enim, vel varius justo tincidunt id.",
   "tecnologies": "HTML, CSS, JavaScript, Vue.js, Firebase"
 }
 
-2- localhost:3000/        - Portfólio / pagina principal        
-3- localhost:3000/list    - Gerenciamento de projetos
+```
+
+- localhost:3000/ - Portfólio / página principal
+- localhost:3000/list - Gerenciamento de projetos
