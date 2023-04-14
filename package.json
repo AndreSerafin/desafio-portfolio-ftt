@@ -7,7 +7,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "concurrently \"cd backend && nodemon --exec sucrase-node src/index.js\" \"cd frontend && yarn start\""
+    "start": "concurrently \"cd backend && nodemon --exec sucrase-node src/index.js --host 25.30.107.218\" \"cd frontend && yarn start\""
   },
   "dependencies": {
     "concurrently": "^8.0.1",

@@ -1,4 +1,4 @@
-import introImg from "../../../assets/imgs/homepage-img.png";
+import introImg from '../../../assets/imgs/homepage-img.png';
 import {
   Body,
   ArrowContainer,
@@ -9,15 +9,15 @@ import {
   IntroTitle,
   ProjectsContainer,
   CardsContainer,
-} from "./styles";
-import { useState, useEffect } from "react";
+} from './styles';
+import { useState, useEffect } from 'react';
 
-import { arrowDown } from "../../../assets";
-import { Card } from "../../../components";
-import { getProjects } from "../../projects/list/functions/getProject";
+import { arrowDown } from '../../../assets';
+import { Card } from '../../../components';
+import { getProjects } from '../../projects/list/functions/getProject';
 
 const HomePage = () => {
-  const imageUrl = "";
+  const imageUrl = '';
 
   const [data, setData] = useState([]);
   const [error, setError] = useState(false);
@@ -28,25 +28,22 @@ const HomePage = () => {
   }, [success]);
 
   const renderCards = (imgUrl) => {
-    let aux = [];
-
-    for (let i = 0; i < data.length; i++) {
-      aux.push(
+    return data.map((i, index) => {
+      return (
         <Card
-          imgUrl={`https://source.unsplash.com/random/80${i}x60${i}/?websites`}
-          href={data[i].project_name
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .replace(/[^\w\s]/gi, "")
+          id={i.id}
+          imgUrl={`https://source.unsplash.com/random/80${index}x60${index}/?software`}
+          href={i.project_name
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^\w\s]/gi, '')
             .toLowerCase()
-            .replace(/\s+/g, "-")}
-          title={data[i].project_name}
-          category={data[i].project_category}
+            .replace(/\s+/g, '-')}
+          title={i.project_name}
+          category={i.project_category}
         />
       );
-    }
-
-    return aux;
+    });
   };
 
   return (
